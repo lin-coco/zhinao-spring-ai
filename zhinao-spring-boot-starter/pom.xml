@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.lincoco.springai</groupId>
+        <artifactId>zhinao-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.lincoco.zhinao</groupId>
+    <artifactId>zhinao-spring-boot-starter</artifactId>
+    <packaging>jar</packaging>
+    <name>Zhinao AI Spring Boot Starter</name>
+    <description>Zhinao AI Spring Boot Starter</description>
+    <url>https://github.com/lincoco/zhinao-spring-ai</url>
+
+    <scm>
+        <url>https://github.com/lincoco/zhinao-spring-ai</url>
+        <connection>git://github.com/lincoco/zhinao-spring-ai.git</connection>
+        <developerConnection>git@github.com:lincoco/zhinao-spring-ai.git</developerConnection>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.lincoco.springai</groupId>
+            <artifactId>zhinao-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lincoco.zhinao</groupId>
+            <artifactId>spring-ai-autoconfigure-model-zhinao</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+            <version>3.2.4</version>
+        </dependency>
+    </dependencies>
+
+</project>
