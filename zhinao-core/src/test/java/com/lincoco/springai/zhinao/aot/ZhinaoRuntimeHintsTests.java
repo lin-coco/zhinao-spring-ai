@@ -16,7 +16,6 @@ limitations under the License.
 package com.lincoco.springai.zhinao.aot;
 
 import com.lincoco.springai.zhinao.ZhinaoChatOptions;
-import com.lincoco.springai.zhinao.aot.ZhinaoRuntimeHints;
 import com.lincoco.springai.zhinao.api.ZhinaoApi;
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.aot.AiRuntimeHints;

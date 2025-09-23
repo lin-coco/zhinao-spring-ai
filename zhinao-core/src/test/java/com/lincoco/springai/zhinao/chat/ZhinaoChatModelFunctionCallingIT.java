@@ -49,33 +49,6 @@ public class ZhinaoChatModelFunctionCallingIT {
     @Autowired
     ChatModel chatModel;
 
-    private static final ZhinaoApi.FunctionTool FUNCTION_TOOL = new ZhinaoApi.FunctionTool(ZhinaoApi.FunctionTool.Type.FUNCTION, new ZhinaoApi.FunctionTool.Function(
-            "Get the weather in location. Return temperature in 30°F or 30°C format. The location must include the English name.",
-            "getCurrentWeather", """
-					{
-						"type": "object",
-						"properties": {
-							"location": {
-								"type": "string",
-								"description": "The city and state e.g. San Francisco, CA. Must include the English name."
-							},
-							"lat": {
-								"type": "number",
-								"description": "The city latitude"
-							},
-							"lon": {
-								"type": "number",
-								"description": "The city longitude"
-							},
-							"unit": {
-								"type": "string",
-								"enum": ["C", "F"]
-							}
-						},
-						"required": ["location", "lat", "lon", "unit"]
-					}
-					"""));
-
     @Test
     void functionCallTest() {
         UserMessage userMessage = new UserMessage("What's the weather like in San Francisco, Tokyo, and Paris? Return the temperature in Celsius.");

@@ -15,9 +15,12 @@ limitations under the License.
  */
 package com.lincoco.springai.zhinao.autoconfigure;
 
+/**
+ * @author xueyeshang
+ */
 public class ZhinaoParentProperties {
 
-    private String apiKey;;
+    private String apiKey;
 
     private String baseUrl;
 

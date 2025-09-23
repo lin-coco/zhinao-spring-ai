@@ -48,6 +48,7 @@ import reactor.core.scheduler.Schedulers;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -412,11 +413,7 @@ public class ZhinaoChatModel implements ChatModel, StreamingChatModel {
         }
 
         public ZhinaoChatModel build() {
-            if (this.toolCallingManager != null) {
-                return new ZhinaoChatModel(this.zhinaoApi, this.defaultOptions, this.toolCallingManager,
-                        this.retryTemplate, this.observationRegistry, this.toolExecutionEligibilityPredicate);
-            }
-            return new ZhinaoChatModel(this.zhinaoApi, this.defaultOptions, DEFAULT_TOOL_CALLING_MANAGER,
+            return new ZhinaoChatModel(this.zhinaoApi, this.defaultOptions, Objects.requireNonNullElse(this.toolCallingManager, DEFAULT_TOOL_CALLING_MANAGER),
                     this.retryTemplate, this.observationRegistry, this.toolExecutionEligibilityPredicate);
         }
     }

@@ -45,6 +45,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import static com.lincoco.springai.zhinao.api.ZhinaoConstants.ZHINAO_PROVIDER_NAME;
 
+/**
+ * @author xueyeshang
+ */
 @AutoConfiguration(after = {
         RestClientAutoConfiguration.class,
         WebClientAutoConfiguration.class,

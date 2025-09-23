@@ -23,6 +23,9 @@ import org.springframework.aot.hint.TypeReference;
 import reactor.util.annotation.NonNull;
 import reactor.util.annotation.Nullable;
 
+/**
+ * @author xueyeshang
+ */
 public class ZhinaoRuntimeHints implements RuntimeHintsRegistrar {
     @Override
     public void registerHints(@NonNull RuntimeHints hints, @Nullable ClassLoader classLoader) {

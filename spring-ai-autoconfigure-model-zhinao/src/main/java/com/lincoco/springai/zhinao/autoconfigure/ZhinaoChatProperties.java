@@ -22,6 +22,9 @@ import org.springframework.boot.context.properties.NestedConfigurationProperty;
 
 import static com.lincoco.springai.zhinao.api.ZhinaoConstants.DEFAULT_COMPLETIONS_PATH;
 
+/**
+ * @author xueyeshang
+ */
 @ConfigurationProperties(ZhinaoChatProperties.CONFIG_PREFIX)
 public class ZhinaoChatProperties extends ZhinaoParentProperties {
 

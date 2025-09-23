@@ -13,8 +13,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
  */
+
 package com.lincoco.springai.zhinao.api;
 
+/**
+ * @author xueyeshang
+ */
 public final class ZhinaoConstants {
 
     public static final String DEFAULT_BASE_URL = "https://api.360.cn";

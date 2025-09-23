@@ -42,7 +42,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ZhinaoChatModelObservationIT {
 
     @Autowired
-    TestObservationRegistry observationRegistry;;
+    TestObservationRegistry observationRegistry;
 
     @Autowired
     ZhinaoChatModel chatModel;

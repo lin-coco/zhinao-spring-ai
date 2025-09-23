@@ -20,6 +20,9 @@ import org.springframework.util.CollectionUtils;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author xueyeshang
+ */
 public class ZhinaoStreamFunctionCallingHelper {
 
     public ZhinaoApi.ChatCompletionChunk merge(ZhinaoApi.ChatCompletionChunk previous, ZhinaoApi.ChatCompletionChunk current) {
@@ -58,11 +61,10 @@ public class ZhinaoStreamFunctionCallingHelper {
 
     private ZhinaoApi.ChatCompletionMessage merge(ZhinaoApi.ChatCompletionMessage previous, ZhinaoApi.ChatCompletionMessage current) {
         String content = (current.content() != null ? current.content()
-                : "" + ((previous.content() != null) ? previous.content() : ""));
+                : (previous.content() != null) ? previous.content() : "");
         ZhinaoApi.ChatCompletionMessage.Role role = (current.role() != null ? current.role() : previous.role());
-        role = (role != null ? role : ZhinaoApi.ChatCompletionMessage.Role.ASSISTANT); // default to ASSISTANT if null
-        // String name = (current.name() != null ? current.name() : previous.name());
-        //String toolCallId = (current.toolCallId() != null ? current.toolCallId() : previous.toolCallId());
+        // default to ASSISTANT if null
+        role = (role != null ? role : ZhinaoApi.ChatCompletionMessage.Role.ASSISTANT);
 
         List<ZhinaoApi.ChatCompletionMessage.ToolCall> toolCalls = new ArrayList<>();
         ZhinaoApi.ChatCompletionMessage.ToolCall lastPreviousTooCall = null;

@@ -28,6 +28,7 @@ import java.util.*;
 
 /**
  * Options for Zhinao Chat completions.
+ * @author xueyeshang
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ZhinaoChatOptions implements ToolCallingChatOptions {
@@ -227,7 +228,9 @@ public class ZhinaoChatOptions implements ToolCallingChatOptions {
 
     @Override
     public boolean equals(Object o) {
-        if (o == null || getClass() != o.getClass()) return false;
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         ZhinaoChatOptions that = (ZhinaoChatOptions) o;
         return Objects.equals(model, that.model) && Objects.equals(temperature, that.temperature)
                 && Objects.equals(maxTokens, that.maxTokens) && Objects.equals(topP, that.topP)
@@ -337,7 +340,6 @@ public class ZhinaoChatOptions implements ToolCallingChatOptions {
             } else {
                 this.options.toolContext.putAll(toolContext);
             }
-            this.options.toolContext = toolContext;
             return this;
         }
 

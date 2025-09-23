@@ -143,7 +143,7 @@ public class ZhinaoApi {
                 .concatMapIterable(window -> {
                     Mono<ChatCompletionChunk> monoChunk = window.reduce(
                             new ChatCompletionChunk(null, null, null, null, null, null),
-                            (previous, current) -> this.chunkMerge.merge(previous, current));
+                            this.chunkMerge::merge);
                     return List.of(monoChunk);
                 })
                 .flatMap(mono -> mono);

@@ -170,8 +170,7 @@ class FunctionCallbackWithPlainFunctionBeanIT {
 		// function description.
 		@Bean
 		public Function<MockWeatherService.Request, MockWeatherService.Response> weatherFunctionTwo() {
-			MockWeatherService weatherService = new MockWeatherService();
-			return (weatherService::apply);
+			return new MockWeatherService();
 		}
 
 	}
