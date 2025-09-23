@@ -1,0 +1,98 @@
+= Getting Started
+:page-title: Getting Started with Zhinao AI Java Client
+:toc: left
+:tabsize: 2
+:sectnums:
+
+This guide will help you get started with the Zhinao AI Java Client.
+
+== Prerequisites
+
+Before you begin, ensure you have the following:
+
+* Java 17 or higher
+* Maven 3.6.3 or higher
+* A Zhinao AI API key
+
+=== Obtaining an API Key
+
+You will need to create an API key with Zhinao to access Zhinao AI language models.
+Create an account at https://ai.360.com/platform[Zhinao AI registration page] and generate the API key on the https://ai.360.com/platform/keys[API Keys page].
+
+== Adding the Library to Your Project
+
+=== Maven
+
+Add the following dependency to your `pom.xml`:
+
+[source,xml]
+----
+<dependency>
+    <groupId>com.lincoco.springai</groupId>
+    <artifactId>zhinao-core</artifactId>
+    <version>last-version</version>
+</dependency>
+----
+
+=== Gradle
+
+Add the following dependency to your `build.gradle`:
+
+[source,groovy]
+----
+dependencies {
+    implementation 'com.lincoco.springai:zhinao-core:last-version'
+}
+----
+
+== Quick Start Example
+
+Here's a simple example of using the Zhinao AI Java Client:
+
+[source,java]
+----
+import org.springframework.ai.chat.ChatResponse;
+import org.springframework.ai.chat.messages.UserMessage;
+import org.springframework.ai.chat.prompt.Prompt;
+import org.springframework.ai.zhinao.ZhinaoChatModel;
+import org.springframework.ai.zhinao.ZhinaoChatOptions;
+import org.springframework.ai.zhinao.api.ZhinaoApi;
+
+public class ZhinaoQuickStart {
+
+    public static void main(String[] args) {
+        // Create the Zhinao API client with your API key
+        String apiKey = System.getenv("ZHINAO_API_KEY");
+        ZhinaoApi zhinaoApi = new ZhinaoApi(apiKey);
+
+        // Create the chat model with default options
+        ZhinaoChatModel chatModel = new ZhinaoChatModel(zhinaoApi);
+
+        // Create a prompt with a user message
+        UserMessage userMessage = new UserMessage("Tell me a joke about programming");
+        Prompt prompt = new Prompt(userMessage);
+
+        // Get the response
+        ChatResponse response = chatModel.call(prompt);
+
+        // Print the response content
+        System.out.println(response.getResult().getOutput().getContent());
+    }
+}
+----
+
+== Setting Environment Variables
+
+It's best practice to store your API key in an environment variable. You can set it with:
+
+[source,shell]
+----
+export ZHINAO_API_KEY=your_api_key_here
+----
+
+== Next Steps
+
+Now that you have the Zhinao AI Java Client set up, you can:
+
+* Learn about the xref:api/chat/zhinao-chat.adoc[Chat API]
+* Explore xref:api/chat/functions/zhinao-chat-functions.adoc[Function Calling]

@@ -1,0 +1,38 @@
+= Zhinao AI Java Client
+:page-title: Zhinao AI Java Client
+:toc: left
+:tabsize: 2
+:sectnums:
+
+Zhinao AI Java Client is a community-maintained library for working with the Zhinao AI platform. It is based on the Spring AI project's Zhinao integration and has been extracted to be used as a standalone library.
+
+== Overview
+
+This library provides a Java client for interacting with Zhinao AI's language models, allowing you to create applications that use Zhinao's capabilities for natural language understanding and generation.
+
+== Features
+
+* Complete implementation of the Zhinao API
+* Support for chat completions
+* Support for streaming responses
+* Function calling capability
+* Retry mechanism for API calls
+* Observation and metrics support via Micrometer
+
+== Requirements
+
+* Java 17 or higher
+* Maven 3.6.3 or higher
+
+== Getting Started
+
+Get started using Zhinao AI Java Client by following our xref:getting-started.adoc[Getting Started] guide.
+
+== Documentation
+
+* xref:api/chat/zhinao-chat.adoc[Chat Models] - Learn how to generate text using the Zhinao Chat API
+* xref:api/chat/functions/zhinao-chat-functions.adoc[Function Calling] - Learn how to connect AI with your custom functions
+
+== Contributing
+
+We welcome contributions to Zhinao AI Java Client! Please see our xref:contribution-guidelines.adoc[Contribution Guidelines] for more information on how to get involved.

@@ -1,0 +1,5 @@
+* xref:index.adoc[Overview]
+* xref:getting-started.adoc[Getting Started]
+* xref:api/chat/zhinao-chat.adoc[Zhinao AI Chat]
+** xref:api/chat/functions/zhinao-chat-functions.adoc[Function Calling]
+* xref:contribution-guidelines.adoc[Contribution Guidelines]
