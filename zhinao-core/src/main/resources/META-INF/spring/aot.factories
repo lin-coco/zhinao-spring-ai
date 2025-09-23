@@ -1,2 +1,2 @@
 org.springframework.aot.hint.RuntimeHintsRegistrar=\
-  aot.com.lincoco.zhinao.springai.ZhinaoRuntimeHints
+  aot.com.lincoco.springai.zhinao.ZhinaoRuntimeHints

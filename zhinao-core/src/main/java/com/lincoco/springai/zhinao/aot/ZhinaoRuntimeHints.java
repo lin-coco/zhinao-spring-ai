@@ -30,7 +30,7 @@ public class ZhinaoRuntimeHints implements RuntimeHintsRegistrar {
     @Override
     public void registerHints(@NonNull RuntimeHints hints, @Nullable ClassLoader classLoader) {
         MemberCategory[] mcs = MemberCategory.values();
-        for (TypeReference typeReference : AiRuntimeHints.findJsonAnnotatedClassesInPackage("com.lincoco.zhinao.springai")) {
+        for (TypeReference typeReference : AiRuntimeHints.findJsonAnnotatedClassesInPackage("com.lincoco.springai.zhinao")) {
             hints.reflection().registerType(typeReference, mcs);
         }
     }

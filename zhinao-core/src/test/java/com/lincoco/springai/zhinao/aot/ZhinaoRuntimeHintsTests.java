@@ -38,7 +38,7 @@ public class ZhinaoRuntimeHintsTests {
 
         zhinaoRuntimeHints.registerHints(runtimeHints, null);
 
-        Set<TypeReference> jsonAnnotatedClasses = AiRuntimeHints.findJsonAnnotatedClassesInPackage("com.lincoco.zhinao.springai");
+        Set<TypeReference> jsonAnnotatedClasses = AiRuntimeHints.findJsonAnnotatedClassesInPackage("com.lincoco.springai.zhinao");
 
         Set<TypeReference> registeredTypes = new HashSet<>();
         runtimeHints.reflection().typeHints().forEach(typeHint -> registeredTypes.add(typeHint.getType()));
