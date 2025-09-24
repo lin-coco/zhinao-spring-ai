@@ -15,8 +15,6 @@ limitations under the License.
  */
 package io.github.lincoco.zhinao;
 
-import io.github.lincoco.zhinao.ZhinaoChatModel;
-import io.github.lincoco.zhinao.ZhinaoChatOptions;
 import io.github.lincoco.zhinao.api.ZhinaoApi;
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.chat.prompt.Prompt;

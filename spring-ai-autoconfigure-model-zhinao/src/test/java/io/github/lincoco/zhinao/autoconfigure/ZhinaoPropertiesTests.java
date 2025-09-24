@@ -16,9 +16,6 @@ limitations under the License.
 
 package io.github.lincoco.zhinao.autoconfigure;
 
-import io.github.lincoco.zhinao.autoconfigure.ZhinaoChatAutoConfiguration;
-import io.github.lincoco.zhinao.autoconfigure.ZhinaoChatProperties;
-import io.github.lincoco.zhinao.autoconfigure.ZhinaoCommonProperties;
 import io.github.lincoco.zhinao.ZhinaoChatModel;
 import org.junit.jupiter.api.Test;
 import org.springframework.ai.retry.autoconfigure.SpringAiRetryAutoConfiguration;

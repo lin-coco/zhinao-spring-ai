@@ -15,7 +15,6 @@ limitations under the License.
  */
 package io.github.lincoco.zhinao;
 
-import io.github.lincoco.zhinao.ZhinaoChatModel;
 import io.github.lincoco.zhinao.api.ZhinaoApi;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.context.annotation.Bean;
