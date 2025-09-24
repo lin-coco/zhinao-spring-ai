@@ -16,10 +16,17 @@
     <description>Zhinao AI Spring Boot Starter</description>
     <url>https://github.com/lincoco/zhinao-spring-ai</url>
 
+    <developers>
+        <developer>
+            <name>lin-coco</name>
+            <email>lincocoxue@qq.com</email>
+        </developer>
+    </developers>
+
     <scm>
-        <url>https://github.com/lin-coco/zhinao-spring-ai</url>
-        <connection>git://github.com/lin-coco/zhinao-spring-ai.git</connection>
-        <developerConnection>git@github.com:lin-coco/zhinao-spring-ai.git</developerConnection>
+        <connection>scm:git:git://github.com/lincoco/zhinao-spring-ai.git</connection>
+        <developerConnection>scm:git:ssh://github.com:lincoco/zhinao-spring-ai.git</developerConnection>
+        <url>https://github.com/lincoco/zhinao-spring-ai</url>
     </scm>
 
     <dependencies>
