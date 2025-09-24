@@ -4,13 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.lincoco.springai</groupId>
+        <groupId>io.github.lin-coco</groupId>
         <artifactId>zhinao-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-beta.1</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <groupId>com.lincoco.zhinao</groupId>
     <artifactId>spring-ai-autoconfigure-model-zhinao</artifactId>
     <packaging>jar</packaging>
     <name>Spring AI Zhinao AI Auto Configuration</name>
@@ -18,9 +17,9 @@
     <url>https://github.com/lincoco/zhinao-spring-ai</url>
 
     <scm>
-        <url>https://github.com/lincoco/zhinao-spring-ai</url>
-        <connection>git://github.com/lincoco/zhinao-spring-ai.git</connection>
-        <developerConnection>git@github.com:lincoco/zhinao-spring-ai.git</developerConnection>
+        <url>https://github.com/lin-coco/zhinao-spring-ai</url>
+        <connection>git://github.com/lin-coco/zhinao-spring-ai.git</connection>
+        <developerConnection>git@github.com:lin-coco/zhinao-spring-ai.git</developerConnection>
     </scm>
 
     <properties>
@@ -32,7 +31,7 @@
     <dependencies>
         <!-- Zhinao Core dependency -->
         <dependency>
-            <groupId>com.lincoco.springai</groupId>
+            <groupId>io.github.lin-coco</groupId>
             <artifactId>zhinao-core</artifactId>
             <version>${project.parent.version}</version>
             <optional>true</optional>

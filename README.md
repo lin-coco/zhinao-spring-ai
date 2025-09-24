@@ -52,7 +52,7 @@ Add the following dependency to your Maven project:
 
 ```xml
 <dependency>
-    <groupId>com.lincoco.springai</groupId>
+    <groupId>io.github.lin-coco</groupId>
     <artifactId>zhinao-core</artifactId>
     <version>latest-version</version>
 </dependency>
