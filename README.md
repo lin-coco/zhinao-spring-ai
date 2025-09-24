@@ -1,6 +1,8 @@
 # zhinao-spring-ai
 
-`zhinao-spring-ai` is a Java Spring client for the **Zhinao AI API**. For more information, visit [Zhinao AI Documentation](https://ai.360.com/platform/docs/overview).
+`zhinao-spring-ai` is a Java client for the **360Zhinao AI API**. For more information, visit [Zhinao AI Documentation](https://ai.360.com/platform/docs/overview).
+
+[中文版README](README_zh.md)
 
 ## Overview
 
@@ -14,7 +16,7 @@ This project is organized as a **multi-module Maven project**:
 
 ## Features
 
-* **Chat Models**: Full support for the Moonshot Chat API
+* **Chat Models**: Full support for the Zhinao Chat API
 * **Flexible Configuration**: Configure temperature, max tokens, top-p sampling, and more
 * **Streaming Responses**: Token-by-token streaming for real-time interactive applications
 * **Function Calling**: Register Java functions callable by Zhinao models with typed arguments
